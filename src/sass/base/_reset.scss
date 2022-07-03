@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #2d5deb #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2d5deb;
+  border-radius: 10px;
+  border: 3px ridge #9d9bbb;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "ًRoboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    141deg,
+    rgb(255, 255, 255) 0%,
+    #eefcff 51%,
+    #f2f2f2 75%
+  );
+}
+
+
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+input {
+  outline: none;
+}
+
+section {
+  padding: 3rem 0 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

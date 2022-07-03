@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We.care</title>
+    <link rel="stylesheet" href="./css/wecare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="./scripts/loader.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="nav">
+                <figure class="nav__logo">
+                    <img src="./assets/images/WeCare-Logo.png" alt="logo">
+                </figure>
+                <div class="nav__links__wrapper">
+                    <ul class="links">
+                        <li class="links__item"><a href="">Find a Doctor</a></li>
+                        <li class="links__item"><a href="">Find a Hospital</a></li>
+                        <li class="links__item"><a href="">Health A to Z</a></li>
+                    </ul>
+                </div>
+                <div class="nav__buttons__wrapper">
+                    <button class="btn--login">Log in</button>
+                    <button class="btn--signup">Sign up</button>
+                </div>
+            </div>
+
+        </div>
+
+        <section id="hero">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__text">
+                        <div class="hero__text--large">
+                            <h1>Feel Better About Finding Healthcare</h1>
+                        </div>
+                        <div class="hero__text--small">
+                            <p> At Healthgrades, we take the guesswork out of finding the right doctors and hospitals,
+                                and care for you and your family.</p>
+                        </div>
+                        <div class="hero__text__testimonial">
+                            <div class="doctor-profiles">
+                                <div class="doctor-profiles__image">
+                                    <img src="./assets/icons/icons8-star-50.png" alt="people icon">
+                                </div>
+                                <div class="doctor-profiles__text">
+                                    <p>Profiles for Every Doctor in America</p>
+                                </div>
+                            </div>
+
+                            <div class="patient-ratings">
+                                <div class="patient-ratings__image">
+                                    <img src="./assets/icons/icons8-thumbs-up-50.png" alt="thumbs up">
+                                </div>
+                                <div class="patient-ratings__text">
+                                    <p>More Than 10 Million Ratings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./assets/people/og/0-removebg-preview.png" alt="doctor">
+                        <div class="hero__image__circle--1">
+                            <img class="icon--1 hero__icon" src="./assets/icons/icons8-stethoscope-50.png"
+                                alt="icon">
+                        </div>
+                        <div class="hero__image__circle--2">
+                            <img class="icon--2 hero__icon" src="./assets/icons/icons8-pill-50.png" alt="icon">
+
+                        </div>
+                        <div class="hero__image__circle--3">
+                            <img class="icon--3 hero__icon" src="./assets/icons/icons8-medical-50-4.png" alt="icon">
+                        </div>
+                        <div class="hero__image__circle--4">
+                            <img class="icon--4 hero__icon" src="./assets/icons/icons8-rod-of-asclepius-50.png"
+                                alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+    <main id="main">
+        <!-- search -->
+        <section id="search">
+            <div class="container">
+                <div class="search">
+                    <div class="search__bars">
+                        <div class="search__bars--doctor">
+                            <img src="./assets/icons/icons8-magnifier-50.png" class="search__bars__logo"></img>
+                            <input type="text" placeholder="Search Doctors, Conditions or Procedures">
+                        </div>
+                        <div class="search__bars--location">
+                            <img src="./assets/icons/icons8-location-50.png" class="search__bars__logo"></img>
+                            <input type="text" placeholder="Set Your Location">
+                        </div>
+                        <button class="search__bars--btn"><img src="./assets/icons/icons8-magnifier-50.png"
+                                alt=""></button>
+                    </div>
+
+                    <div class="search__looking">
+                        <h3>You may be looking for</h3>
+
+                        <div class="search__looking__tags">
+                            <div class="tag__wrapper tag__wrapper--1">
+                                <p>Family Medicine</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <div class="tag__wrapper tag__wrapper--2">
+                                <p>Pediatrics</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <div class="tag__wrapper tag__wrapper--3">
+                                <p>Top Hospital</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <div class="tag__wrapper tag__wrapper--4">
+                                <p>Telehealth</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <div class="tag__wrapper tag__wrapper--5">
+                                <p>COVID-19</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <div class="tag__wrapper tag__wrapper--6">
+                                <p>Orthopedic Surgery</p>
+                                <img src="./assets/icons/icons8-x-50.png" alt="x">
+                            </div>
+
+                            <button>
+                                <a href="#">More</a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- popular searches -->
+
+        <section id="popular-search">
+            <div class="container">
+                <div class="popular-search">
+                    <h2>Popular Searches on Wecare</h2>
+                    <div class="popular-search__wrapper">
+                        <div class="popular-search__titles">
+                            <p>Specialties</p>
+                            <p>Conditions</p>
+                            <p>Procedures</p>
+                        </div>
+                        <div class="popular-search__line">
+
+                        </div>
+                        <div class="popular__items__wrapper">
+                            <div class="popular__items--1 dermatology popular__item">
+                                <img src="./assets/icons/icons8-dermatology-50.png" alt="dermatology">
+                                <p>Dermatology</p>
+                            </div>
+                            <div class="popular__items--2 internal popular__item">
+                                <img src="./assets/icons/icons8-lungs-50.png" alt="internal medicine">
+                                <p>Internal Medicine</p>
+                            </div>
+                            <div class="popular__items--3 neurology popular__item">
+                                <img src="./assets/icons/icons8-neurology-science-50.png" alt="neurology">
+                                <p>Neurology</p>
+                            </div>
+                            <div class="popular__items--4 general popular__item">
+                                <img src="./assets/icons/icons8-health-50-2.png" alt="general medicine">
+                                <p>General Medicine</p>
+                            </div>
+                            <div class="popular__items--5 dentistry popular__item">
+                                <img src="./assets/icons/icons8-tooth-50.png" alt="dentistry">
+                                <p>Dentistry</p>
+                            </div>
+                            <div class="popular__items--6 otolary popular__item">
+                                <img src="./assets/icons/icons8-nose-50.png" alt="otolaryngology">
+                                <p>Otolaryngology</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- find doctor -->
+
+        <section id="find-doctor">
+            <div class="container">
+                <div class="find__wrapper">
+                    <div class="find--left">
+                        <h2>Find the right doctor right at your fingertips</h2>
+                        <p>Choose a doctor conveniently according to your needs.</p>
+                        <div class="find--left__box">
+                            <div class="search-hospitals find__item">
+                                <div class="find__item__img">
+                                    <img src="./assets/icons/icons8-health-50-3.png" alt="health">
+                                </div>
+                                <div class="find__item__text">
+                                    <h3>Search for hospitals</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Deleniti, deserunt.</p>
+                                </div>
+                            </div>
+                            <div class="appointment find__item">
+                                <div class="find__item__img">
+
+                                    <img src="./assets/icons/icons8-medical-50-5.png" alt="appointment">
+                                </div>
+                                <div class="find__item__text">
+                                    <h3>Appointment with the best doctor</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quo.</p>
+                                </div>
+                            </div>
+                            <div class="treatment find__item">
+                                <div class="find__item__img">
+                                    <img src="./assets/icons/icons8-pill-50-3.png" alt="treatment">
+                                </div>
+                                <div class="find__item__text">
+                                    <h3>Get your treatment</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, cupiditate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="find--right">
+                        <h3></h3>
+                        <div class="floating-card">
+                            <div class="floating-card__input">
+                                <img src="./assets/icons/icons8-magnifier-50.png" alt="search">
+                                <input type="text" placeholder="search doctors">
+                            </div>
+                            <div class="floating-card__input">
+                                <img src="./assets/icons/icons8-location-50-2.png" alt="location">
+                                <input type="text" placeholder="location">
+                            </div>
+                            <button>
+                                <img src="./assets/icons/icons8-magnifier-50.png" alt="search">
+                                <p>Search Now!</p>
+                            </button>
+                        </div>
+
+                        <img class="find--doctor" src="./assets/people/og/2-removebg-preview.png" alt="doctor">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- why -->
+        <section id="why">
+            <div class="container">
+                <div class="why">
+                    <div class="why--left">
+                        <img class="why--doc" src="./assets/people/og/1-removebg-preview.png" alt="">
+                        <div class="floating-card--2">
+
+
+                            <div class="doctor--card">
+                                <div>
+                                    <img src="./assets/people/og/7-removebg-preview.png" alt="doctor1">
+                                    <p>Dr. Henry</p>
+
+                                </div>
+                                <div class="i">i</div>
+
+                            </div>
+
+                            <div class="doctor--card">
+                                <div>
+                                    <img src="./assets/people/og/9-removebg-preview.png" alt="doctor2">
+                                    <p>Dr. Flloyd</p>
+                                </div>
+
+                                <div class="i">i</div>
+
+                            </div>
+
+
+                            <div class="doctor--card">
+                                <div>
+                                    <img src="./assets/people/og/3-removebg-preview.png" alt="doctor3">
+                                    <p>Dr. McElleny</p>
+                                </div>
+
+                                <div class="i">i</div>
+
+                            </div>
+
+
+                            <div class="doctor--card">
+                                <div>
+                                    <img src="./assets/people/og/5-removebg-preview.png" alt="doctor4">
+                                    <p>Dr. Mike</p>
+                                </div>
+
+
+                                <div class="i">i</div>
+                            </div>
+
+
+                            <div class="doctor--card">
+
+                                <div>
+                                    <img src="./assets/people/og/6-removebg-preview.png" alt="doctor5">
+                                    <p>Dr. Wollowitz</p>
+                                </div>
+
+                                <div class="i">i</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why--right">
+                        <h2>Why you choose We.care</h2>
+
+                        <div class="checkbox">
+                            <div class="checkbox-sentence">
+                                <img src="./assets/icons/icons8-check-circle-50.png" alt="checkbox">
+                                <p>24/7 access to top-notch medical services.</p>
+                            </div>
+                            <div class="checkbox-sentence">
+                                <img src="./assets/icons/icons8-check-circle-50.png" alt="checkbox">
+                                <p>We will come to your location.</p>
+                            </div>
+                            <div class="checkbox-sentence">
+                                <img src="./assets/icons/icons8-check-circle-50.png" alt="checkbox">
+                                <p>All medics are certified and ready to help.</p>
+                            </div>
+                            <div class="checkbox-sentence">
+                                <img src="./assets/icons/icons8-check-circle-50.png" alt="checkbox">
+                                <p>From routine checkups to advanced surgeries, we got you!.</p>
+                            </div>
+                            <div class="checkbox-sentence">
+                                <img src="./assets/icons/icons8-check-circle-50.png" alt="checkbox">
+                                <p>We support a wide range of insurance companies.</p>
+                            </div>
+
+                            <button>
+                                Get FREE Consultation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- specialists -->
+        <section id="specialists">
+            <div class="container">
+                <div class="specialists">
+                    <h3 class="sp--title">Meet our specialists</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="specialists--1">
+                        <div class="specialists--item">
+                            <div class="sp-1--img sp--img">
+                                <!-- <img src="./assets/people/og/2-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text sp--text--1">
+                                <h3>Dr. Katherin Murphy</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-2--img sp--img">
+                                <!-- <img src="./assets/people/og/3-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Robert Fox</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-3--img sp--img">
+                                <!-- <img src="./assets/people/og/1-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Ethan Howard</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-4--img sp--img">
+                                <!-- <img src="./assets/people/og/5-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Leslie Alexander</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists--2">
+                        <div class="specialists--item">
+                            <div class="sp-5--img sp--img">
+                                <!-- <img src="./assets/people/og/6-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Katherin Murphy</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-6--img sp--img">
+                                <!-- <img src="./assets/people/og/7-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Robert Fox</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-7--img sp--img">
+                                <!-- <img src="./assets/people/og/8-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Ethan Howard</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                        <div class="specialists--item">
+                            <div class="sp-8--img sp--img">
+                                <!-- <img src="./assets/people/og/9-removebg-preview.png" alt="doctor"> -->
+                            </div>
+                            <div class="sp--text">
+                                <h3>Dr. Leslie Alexander</h3>
+                                <p>Dental Surgeon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feedback -->
+        <section id="feedback">
+            <div class="container">
+                <div class="feedback">
+                    <h3>Our patients feedback about us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus porro hic aut libero impedit.
+                    </p>
+                    <div class="feedback__wrapper">
+                        <div class="feedback--left">
+                            <img src="./assets/people/og/header-slide-img3.png" alt="people">
+                        </div>
+                        <div class="feedback--right">
+                            <div class="patient-profile">
+                                <div class="patient-img">
+                                    <img src="./assets/people/og/wheelchair guy.png" alt="patient">
+                                </div>
+                                <div class="patient-text">
+                                    <p class="patient-name">Brooklyn Jacob</p>
+                                    <p class="patient-location">New York, USA</p>
+                                    <div class="patient-stars">
+                                        <img class="star" src="./assets/icons/icons8-star-50.png" alt="">
+                                        <img class="star" src="./assets/icons/icons8-star-50.png" alt="">
+                                        <img class="star" src="./assets/icons/icons8-star-50.png" alt="">
+                                        <img class="star" src="./assets/icons/icons8-star-50.png" alt="">
+                                    </div>
+                                    <div class="patient-comment">
+                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit libero
+                                        maiores.""
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="container">
+                <div class="subscribe">
+                    <h2>"Subscribe for news and updates from WeCare"</h2>
+
+                    <div class="subscribe-input">
+                        <input type="text" placeholder="Enter Email address">
+                        <button>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer--1">
+                    <div class="logo">
+                        <img src="./assets/images/WeCare-Logo.png" alt="logo">
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </div>
+
+                <div class="footer--2">
+                    <div class="footer__links">
+                        <h4>For Patients</h4>
+                        <a href="#">Sign Up/Log In</a>
+                        <a href="#">Awards & Ratings</a>
+                        <a href="#">Quality & Reports</a>
+
+                    </div>
+                    <div class="footer__links">
+                        <h4>For Providers</h4>
+                        <a href="#">Providers Log In</a>
+                        <a href="#">Promote Your Practice</a>
+                        <a href="#">Update Your Profile</a>
+
+                    </div>
+                    <div class="footer__links">
+                        <h4>For Partners</h4>
+                        <a href="#">Client Log In</a>
+                        <a href="#">Health Systems</a>
+                        <a href="#">Advertisements</a>
+
+                    </div>
+                    <div class="footer__links">
+                        <h4>Our Company</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Corporate</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <section id="loader">
+        <div class="loader">
+            <button class="btn__loader"></button>
+        </div>
+    </section>
+</body>
+
+</html>

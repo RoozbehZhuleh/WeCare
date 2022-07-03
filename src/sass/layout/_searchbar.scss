@@ -1,0 +1,117 @@
+@import "../utilities/utilities";
+
+.search {
+  @include flex(column, space-around, center);
+  position: relative;
+  top: -8vh;
+  gap: 2rem;
+  height: 28rem;
+  background-color: $light-color;
+  padding: 2rem 2rem;
+  z-index: 10;
+  box-shadow: 1px 1px 5px $accent-color;
+  border-radius: map-get($border-radius, "l");
+
+  &__bars {
+    @include flex(row, center, center);
+    width: 95%;
+    gap: 1rem;
+
+    &--doctor {
+      @include flex(row, flex-start, center);
+      width: 45%;
+      border: 1px solid $accent-color;
+      padding: 0.5rem;
+      background-color: $third-color;
+      border-radius: map-get($border-radius, "s");
+      min-width: 30rem;
+
+      input {
+        width: 85%;
+        padding: 0.8rem;
+        border: none;
+        background-color: $third-color;
+        font-size: map-get($font-size, "l");
+      }
+    }
+
+    &--location {
+      @include flex(row, flex-start, center);
+      width: 45%;
+      border: 1px solid $accent-color;
+      padding: 0.5rem;
+      background-color: $third-color;
+      border-radius: map-get($border-radius, "s");
+      min-width: 30rem;
+
+      input {
+        width: 85%;
+        padding: 0.8rem;
+        border: none;
+        background-color: $third-color;
+        font-size: map-get($font-size, "l");
+      }
+    }
+
+    &--btn {
+      @include btn;
+      width: 9rem;
+      border: 1px solid $accent-color;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  &__looking {
+    @include flex(column, flex-start, flex-start);
+    width: 94%;
+    gap: 1rem;
+
+    h3 {
+      color: $accent-color;
+      margin: 1rem 0;
+      font-size: map-get($font-size, "l");
+      font-weight: map-get($font-weight, "regular");
+    }
+
+    &__tags {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      button {
+        @include btn;
+        background-color: $third-color;
+        text-decoration: none;
+        color: $dark-color;
+        padding: 0.8rem 1rem;
+        font-size: map-get($font-size, "ml");
+        border-radius: map-get($border-radius, "m");
+      }
+
+      .tag__wrapper {
+        @include flex(row, flex-start, center);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: map-get($border-radius, "m");
+        background-color: $third-color;
+
+        p {
+          font-size: map-get($font-size, "ml");
+          color: $accent-color;
+        }
+
+        img {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

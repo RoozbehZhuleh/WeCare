@@ -1,0 +1,126 @@
+@import "../utilities/utilities";
+
+#why {
+  background: rgb(216, 232, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(216, 232, 255, 1) 0%,
+    rgba(249, 251, 255, 1) 100%
+  );
+  height: 70vh;
+}
+
+.why {
+  @include flex(row, space-between, flex-start);
+  flex-wrap: wrap;
+
+  &--left {
+    @include flex(row, flex-start, flex-start);
+    position: relative;
+    // left: -5vw;
+    border-radius: 57% 43% 59% 41% / 100% 53% 47% 0%;
+    background-color: $secondary-color;
+    // animation: why-bg 10s infinite linear;
+    padding: 2rem;
+
+    .why--doc {
+      width: 32rem;
+      position: relative;
+      top: 2rem;
+    }
+
+    .floating-card--2 {
+      position: relative;
+      top: 9vh;
+      // left: -10vw;
+      @include flex(column, center, flex-start);
+      // gap: 1vh;
+      width: 28rem;
+      background-color: $light-color;
+      border-radius: map-get($border-radius, "m");
+      padding: 1vh;
+      border: 0.5px solid $accent-color;
+      box-shadow: 0.1rem 0.1rem 1rem $accent-color;
+
+      .doctor--card {
+        @include flex(row, flex-start, center);
+        width: 100%;
+        gap: 9rem;
+        border-radius: map-get($border-radius, "m");
+        padding: 0.5vw;
+
+        &:hover {
+          background-color: $accent-color;
+          cursor: pointer;
+          color: map-get($font-color, "secondary");
+        }
+
+        div {
+          gap: 1rem;
+          @include flex(row, flex-start, center);
+          width: 70%;
+          img {
+            width: 4rem;
+            border-radius: 100%;
+            p {
+              color: $dark-color;
+              width: 95%;
+            }
+          }
+        }
+
+        .i {
+          @include flex(row, center, flex-end);
+          width: 3%;
+        }
+      }
+    }
+  }
+
+  &--right {
+    @include flex(column, center, flex-start);
+    gap: 1vh;
+    position: relative;
+    top: 12vh;
+    // left: -3vw;
+    // width: 60%;
+
+    h2 {
+      font-size: map-get($font-size, "2xl");
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary");
+      margin: 0 0 5vh 0;
+    }
+
+    .checkbox {
+      @include flex(column, center, flex-start);
+      gap: 2vh;
+
+      .checkbox-sentence {
+        @include flex(row, flex-start, center);
+        font-size: map-get($font-size, "ml");
+        transition: transform 0.2s linear;
+        gap: 0.5vw;
+        &:hover {
+          transform: translateX(1rem);
+        }
+
+        img {
+          width: 2vw;
+        }
+      }
+
+      button {
+        @include btn;
+        color: map-get($font-color, "secondary");
+        background-color: $accent-color;
+
+        &:hover {
+          box-shadow: inset 0 0 0 1px $accent-color;
+          background-color: $light-color;
+          color: map-get($font-color, "primary");
+        }
+      }
+    }
+  }
+}

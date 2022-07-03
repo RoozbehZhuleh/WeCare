@@ -1,0 +1,198 @@
+@import "../utilities/utilities";
+
+.specialists {
+  @include flex(column, center, center);
+  margin: 5vh 0 0 0;
+  gap: 2vh;
+
+  .sp--title {
+    font-size: map-get($font-size, "2xl");
+    color: map-get($font-color, "primary");
+    font-weight: map-get($font-weight, "medium");
+  }
+
+  p {
+    color: map-get($font-color, "other");
+    font-size: map-get($font-size, "ml");
+  }
+
+  &--1 {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .specialists--item {
+      @include flex(column, center, center);
+      // gap: 2rem;
+      width: 30rem;
+      background-color: $light-color;
+      padding: 2rem 0 0 0;
+      border-radius: map-get($border-radius, "l");
+      cursor: pointer;
+      transition: all 0.2s linear;
+      box-shadow: 1px 1px 5px $accent-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+      h3 {
+        color: map-get($font-color, "secondary");
+      }
+      p {
+        color: map-get($font-color, "other");
+      }
+    }
+
+    .sp-1--img {
+      @include sp-img;
+      background: url(../../assets/people/og/1-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -12%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 120%;
+      }
+    }
+    .sp-2--img {
+      @include sp-img;
+      background: url(../../assets/people/og/2-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 70% -10%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+    .sp-3--img {
+      @include sp-img;
+      background: url(../../assets/people/og/3-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -10%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 120%;
+      }
+    }
+    .sp-4--img {
+      @include sp-img;
+      background: url(../../assets/people/og/5-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -12%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 120%;
+      }
+    }
+
+    .sp--text {
+      @include flex(column, center, center);
+      background-color: $secondary-color;
+      width: 100%;
+      height: 8rem;
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+
+  &--2 {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .sp--text {
+      @include flex(column, center, center);
+      background-color: $secondary-color;
+      width: 100%;
+      height: 8rem;
+      border-radius: 0 0 1rem 1rem;
+    }
+
+    .specialists--item {
+      @include flex(column, center, center);
+      // gap: 2rem;
+      width: 30rem;
+      background-color: $light-color;
+      padding: 2rem 0 0 0;
+      border-radius: map-get($border-radius, "l");
+      cursor: pointer;
+      transition: all 0.2s linear;
+      box-shadow: 1px 1px 5px $accent-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+      h3 {
+        color: map-get($font-color, "secondary");
+      }
+      p {
+        color: map-get($font-color, "other");
+      }
+    }
+
+    .sp-5--img {
+      @include sp-img;
+      background: url(../../assets/people/og/6-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -10%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 120%;
+      }
+    }
+    .sp-6--img {
+      @include sp-img;
+      background: url(../../assets/people/og/7-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -12%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 120%;
+      }
+    }
+    .sp-7--img {
+      @include sp-img;
+      background: url(../../assets/people/og/8-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -12%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+    .sp-8--img {
+      @include sp-img;
+      background: url(../../assets/people/og/9-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: 40% -12%;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+  }
+
+  .sp--text {
+    @include flex(column, center, center);
+    background-color: $secondary-color;
+    width: 100%;
+    height: 8rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .slider {
+    @include flex(row, center, center);
+    gap: 1vw;
+    cursor: pointer;
+
+    i {
+      color: $accent-color;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../utilities/utilities";
+
+#popular-search {
+  padding: 4rem 0 0 0;
+}
+
+.popular-search {
+  @include flex(column, center, flex-start);
+  gap: 2rem;
+
+  h2 {
+    color: $accent-color;
+    font-size: map-get($font-size, "2xl");
+    font-weight: map-get($font-weight, "regular");
+  }
+
+  &__wrapper {
+    @include flex(row, center, center);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &__titles {
+    color: $accent-color;
+    cursor: pointer;
+    @include flex(column, space-between, center);
+    gap: 2rem;
+    width: 10%;
+    font-weight: map-get($font-weight, "bold");
+    font-size: map-get($font-size, "ml");
+
+    p {
+      transition: all 0.2s linear;
+      &:hover {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &__line {
+    width: 0.1rem;
+    height: 12rem;
+    border: 1px solid $accent-color;
+  }
+}
+
+.popular__items__wrapper {
+  @include flex(row, space-between, center);
+  width: 90%;
+  gap: 3rem;
+  padding: 1rem;
+
+  .popular__item {
+    @include flex(column, center, center);
+    padding: 1rem;
+    border-radius: map-get($border-radius, "s");
+    width: 18rem;
+    height: 12rem;
+    transition: all 0.2s linear;
+    font-size: map-get($font-size, "m");
+    box-shadow: 1px 1px 1rem $accent-color;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    white-space: nowrap;
+
+    img {
+      width: 7rem;
+    }
+
+    &:hover {
+      background-color: $third-color;
+      cursor: pointer;
+      transform: translateY(-2px);
+    }
+  }
+}
