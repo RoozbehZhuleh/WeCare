@@ -1,5 +1,13 @@
 @import "../utilities/utilities";
 
+#specialists{
+  background: linear-gradient(
+    0deg,
+    rgba(216, 232, 255, 1) 0%,
+    rgba(249, 251, 255, 1) 100%
+  );
+}
+
 .specialists {
   @include flex(column, center, center);
   margin: 5vh 0 0 0;

@@ -30,7 +30,7 @@ html {
   font-size: 62.5%;
   font-family: "ًRoboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 
@@ -47,6 +47,9 @@ body {
   );
 }
 
+main{
+  width: 100%;
+}
 
 .container {
   width: 1400px;
@@ -60,9 +63,9 @@ input {
   outline: none;
 }
 
-section {
-  padding: 3rem 0 0 0;
-}
+// section {
+//   padding: 3rem 0 0 0;
+// }
 
 ul {
   list-style: none;

@@ -2,33 +2,36 @@
 
 .search {
   @include flex(column, space-around, center);
-  position: relative;
-  top: -8vh;
+  position: absolute;
+  // top: -8vh;
   gap: 2rem;
-  height: 28rem;
+  height: 23rem;
+  width: 140rem;
+  max-width: 95%;
+  top: 65rem;
   background-color: $light-color;
   padding: 2rem 2rem;
   z-index: 10;
-  box-shadow: 1px 1px 5px $accent-color;
+  box-shadow: 1px 1px 5px 1px $accent-color;
   border-radius: map-get($border-radius, "l");
 
   &__bars {
     @include flex(row, center, center);
-    width: 95%;
+    width: 90%;
     gap: 1rem;
 
     &--doctor {
       @include flex(row, flex-start, center);
       width: 45%;
-      border: 1px solid $accent-color;
-      padding: 0.5rem;
+      border: 1px solid $fourth-color;
+      // padding: 0.5rem;
       background-color: $third-color;
       border-radius: map-get($border-radius, "s");
-      min-width: 30rem;
+      min-width: 20rem;
 
       input {
         width: 85%;
-        padding: 0.8rem;
+        // padding: 0.8rem;
         border: none;
         background-color: $third-color;
         font-size: map-get($font-size, "l");
@@ -38,8 +41,8 @@
     &--location {
       @include flex(row, flex-start, center);
       width: 45%;
-      border: 1px solid $accent-color;
-      padding: 0.5rem;
+      border: 1px solid $third-color;
+      // padding: 0.5rem;
       background-color: $third-color;
       border-radius: map-get($border-radius, "s");
       min-width: 30rem;
@@ -55,12 +58,13 @@
 
     &--btn {
       @include btn;
-      width: 9rem;
+      width: 8rem;
       border: 1px solid $accent-color;
-      background-color: transparent;
+      background-color: $third-color;
+      color: $light-color;
 
       &:hover {
-        background-color: $secondary-color;
+        background-color: $fourth-color;
       }
 
       img {
@@ -71,7 +75,7 @@
 
   &__looking {
     @include flex(column, flex-start, flex-start);
-    width: 94%;
+    width: 90%;
     gap: 1rem;
 
     h3 {

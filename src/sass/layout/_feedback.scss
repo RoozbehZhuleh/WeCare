@@ -1,10 +1,19 @@
 @import "../utilities/utilities";
 
+#feedback{
+  background: linear-gradient(
+    180deg,
+    rgba(216, 232, 255, 1) 0%,
+    rgba(249, 251, 255, 1) 100%
+  );
+}
+
 .feedback {
   @include flex(column, center, center);
   margin: 10vh 0 0 0;
   gap: 3vh;
   width: 100%;
+  
 
   h3 {
     font-weight: map-get($font-weight, "medium");
@@ -26,7 +35,7 @@
 
     img {
       border-radius: 66% 34% 70% 30% / 30% 84% 16% 70%;
-      background-color: $secondary-color;
+      background-color: $fourth-color;
       animation: feedback-bg 15s linear infinite;
       width: 90%;
     }

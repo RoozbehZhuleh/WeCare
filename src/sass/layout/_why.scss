@@ -3,7 +3,7 @@
 #why {
   background: rgb(216, 232, 255);
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(216, 232, 255, 1) 0%,
     rgba(249, 251, 255, 1) 100%
   );
@@ -19,7 +19,7 @@
     position: relative;
     // left: -5vw;
     border-radius: 57% 43% 59% 41% / 100% 53% 47% 0%;
-    background-color: $secondary-color;
+    background-color: $fourth-color;
     // animation: why-bg 10s infinite linear;
     padding: 2rem;
 

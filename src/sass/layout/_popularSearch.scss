@@ -1,7 +1,11 @@
 @import "../utilities/utilities";
 
 #popular-search {
-  padding: 4rem 0 0 0;
+  padding: 30rem 0 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(216, 232, 255, 1) 0%,
+    rgba(249, 251, 255, 1) 100%)
 }
 
 .popular-search {
@@ -31,6 +35,15 @@
 
     p {
       transition: all 0.2s linear;
+      &::before{
+        content: "";
+        position: absolute;
+        left: 1rem;
+        width: 1rem;
+        height: 1rem;
+        background-color:red;
+      }
+
       &:hover {
         transform: translateX(5px);
       }
